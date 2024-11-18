@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Colourful Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1 id="title">We Value Your Feedback</h1>
+        <p id="description">Please fill out this form to help us improve our services. Your responses will be kept confidential.</p>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Favourite Color:</label>
+                <select id="dropdown" name="color" required>
+                    <option value="">Select...</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Contact Method:</label>
+                <div class="radio-group">
+                    <input type="radio" id="email-contact" name="contact" value="email">
+                    <label for="email-contact">Email</label>
+                    <input type="radio" id="phone-contact" name="contact" value="phone">
+                    <label for="phone-contact">Phone</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="interest1" name="interests" value="tech">
+                    <label for="interest1">Technology</label>
+                    <input type="checkbox" id="interest2" name="interests" value="sports">
+                    <label for="interest2">Sports</label>
+                    <input type="checkbox" id="interest3" name="interests" value="music">
+                    <label for="interest3">Music</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

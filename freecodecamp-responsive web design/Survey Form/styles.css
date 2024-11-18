@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+    color: #fff;
+}
+
+.survey-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FFD700; /* Base color for title */
+    animation: blink 1s infinite; /* Blinking effect */
+}
+
+@keyframes blink {
+    0% { color: #FFD700; } /* Yellow */
+    50% { color: #FFCC00; } /* Gold */
+    100% { color: #FFD700; } /* Yellow */
+}
+
+#description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #FF4B2B;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+button#submit {
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: #FF4B2B;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 0 10px #FFD700; /* Glowing effect */
+}
+
+button#submit:hover {
+    background-color: #FF4B2B;
+    color: #FFD700;
+    box-shadow: 0 0 5px #FFD700; /* Dimmed glowing effect on hover */
+}

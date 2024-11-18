@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff4081; /* Bright pink background */
+    color: #333;
+}
+
+#main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the main content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #e91e63; /* Dark pink color for the title */
+    margin-bottom: 20px;
+    animation: blink 1s infinite; /* Add blinking effect */
+}
+
+@keyframes blink {
+    0% { color: #e91e63; } /* Dark pink */
+    50% { color: #f48fb1; } /* Light pink */
+    100% { color: #e91e63; } /* Dark pink */
+}
+
+#img-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center the image within its parent */
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #e91e63; /* Dark pink color for the caption text */
+}
+
+#tribute-info {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#tribute-link {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    color: #e91e63; /* Dark pink color for the link */
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}

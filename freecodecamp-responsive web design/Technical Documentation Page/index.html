@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Development Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Front-End Development</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#HTML" class="nav-link">HTML</a>
+        <a href="#CSS" class="nav-link">CSS</a>
+        <a href="#JavaScript" class="nav-link">JavaScript</a>
+        <a href="#Tools" class="nav-link">Tools</a>
+        <a href="#Best_Practices" class="nav-link">Best Practices</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Front-end development refers to the part of web development that involves creating the visual and interactive aspects of a website or web application. It encompasses everything that users see and interact with in their web browsers.</p>
+            <p>Front-end developers use various technologies to build user-friendly and visually appealing interfaces. The primary goals are to ensure the site is responsive, accessible, and optimized for performance.</p>
+        </section>
+
+        <section class="main-section" id="HTML">
+            <header>HTML</header>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It structures the content on the web, such as headings, paragraphs, links, images, and more.</p>
+            <p>Key Concepts:</p>
+            <ul>
+                <li><strong>Elements:</strong> Building blocks of HTML, such as <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, and <code>&lt;header&gt;</code>.</li>
+                <li><strong>Attributes:</strong> Provide additional information about HTML elements, like <code>class</code>, <code>id</code>, and <code>href</code>.</li>
+                <li><strong>Forms:</strong> Allow users to input data through fields like text boxes, radio buttons, and checkboxes.</li>
+            </ul>
+            <p>Example Code:</p>
+            <code>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt;My Web Page&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;Welcome to My Website&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph of text.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </section>
+
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <p>CSS (Cascading Style Sheets) controls the presentation, formatting, and layout of HTML elements. It allows developers to apply styles such as colors, fonts, spacing, and positioning.</p>
+            <p>Key Concepts:</p>
+            <ul>
+                <li><strong>Selecting Elements:</strong> Use selectors like <code>p</code>, <code>.class-name</code>, and <code>#id-name</code> to target HTML elements.</li>
+                <li><strong>Box Model:</strong> Describes the layout of elements, including margins, borders, padding, and content.</li>
+                <li><strong>Responsive Design:</strong> Techniques such as media queries ensure the website looks good on all devices.</li>
+            </ul>
+            <p>Example Code:</p>
+            <code>
+                body {<br>
+                &nbsp;&nbsp;background-color: #f4f4f4;<br>
+                &nbsp;&nbsp;color: #333;<br>
+                }<br>
+                h1 {<br>
+                &nbsp;&nbsp;color: #FF69B4;<br>
+                }
+            </code>
+        </section>
+
+        <section class="main-section" id="JavaScript">
+            <header>JavaScript</header>
+            <p>JavaScript is a programming language used to create dynamic and interactive web applications. It allows developers to manipulate the DOM, handle events, and perform various tasks client-side.</p>
+            <p>Key Concepts:</p>
+            <ul>
+                <li><strong>DOM Manipulation:</strong> Use JavaScript to interact with and modify the Document Object Model (DOM).</li>
+                <li><strong>Event Handling:</strong> Respond to user actions such as clicks, form submissions, and key presses.</li>
+                <li><strong>AJAX:</strong> Asynchronous JavaScript and XML allows for dynamic data retrieval without refreshing the page.</li>
+            </ul>
+            <p>Example Code:</p>
+            <code>
+                document.getElementById('myButton').addEventListener('click', function() {<br>
+                &nbsp;&nbsp;alert('Button clicked!');<br>
+                });
+            </code>
+        </section>
+
+        <section class="main-section" id="Tools">
+            <header>Tools</header>
+            <p>Front-end developers use various tools to streamline their workflow and improve productivity. Some essential tools include:</p>
+            <ul>
+                <li><strong>Text Editors:</strong> IDEs and editors like Visual Studio Code, Sublime Text, and Atom.</li>
+                <li><strong>Version Control:</strong> Systems like Git help manage changes to the codebase.</li>
+                <li><strong>Build Tools:</strong> Tools like Webpack, Gulp, and npm scripts automate tasks such as minification and compilation.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices</header>
+            <p>To ensure high-quality front-end development, follow these best practices:</p>
+            <ul>
+                <li><strong>Write Clean Code:</strong> Follow coding standards and maintain a consistent style.</li>
+                <li><strong>Optimize Performance:</strong> Minimize HTTP requests, optimize images, and use caching effectively.</li>
+                <li><strong>Ensure Accessibility:</strong> Make sure the website is accessible to users with disabilities by following web accessibility guidelines.</li>
+                <li><strong>Responsive Design:</strong> Ensure the site is usable on a variety of devices and screen sizes.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
