@@ -1,0 +1,473 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #121212;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background: url('/images/background.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 2;
+    animation: glow 1.5s infinite alternate;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em;
+    text-shadow: 0 0 30px rgba(173, 23, 75, 0.9); /* changed to deep pink */
+}
+
+header p {
+    font-size: 1.5em;
+    text-shadow: 0 0 25px rgba(173, 23, 75, 0.6); /* changed to deep pink */
+}
+
+@keyframes glow {
+    from { color: #fff; }
+    to { color: #ad174b; } /* changed to deep pink */
+}
+
+/* Header Navigation Styles */
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #cfd8da; 
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Intro Section Styles */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+.intro-content {
+    width: 50%;
+    animation: fadeInLeft 2s ease-out;
+}
+
+.intro-content h2 {
+    font-size: 3em;
+    margin: 0;
+    color: #00ffff;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.intro-content p {
+    font-size: 1.5em;
+    color: #ccc;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.anime-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.anime-image img {
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8); 
+    transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
+    filter: grayscale(100%) contrast(120%) sepia(50%);
+}
+
+.anime-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px rgba(0, 255, 255, 1); 
+    filter: grayscale(0%) contrast(100%) sepia(0%);
+}
+
+/* Service Section Styles */
+.service {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.service h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+    position: relative;
+    display: inline-block;
+    animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.6), 0 0 30px rgba(255, 105, 180, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 105, 180, 0.9), 0 0 40px rgba(255, 105, 180, 0.8), 0 0 60px rgba(255, 105, 180, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.6), 0 0 30px rgba(255, 105, 180, 0.5);
+    }
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-around; /* Distribute boxes evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between effect boxes */
+}
+
+/* Effect Box Styles */
+.effect-box {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%; /* Adjust width to fit side by side */
+    min-width: 200px; /* Ensure boxes don’t get too small */
+    height: 200px; /* Adjust height */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7); /* Changed to crystal pink */
+    transition: transform 0.5s, box-shadow 0.5s;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.effect-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 105, 180, 0.2), transparent); /* Changed to crystal pink */
+    animation: pulse 3s infinite;
+    opacity: 0.5;
+}
+
+.effect-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 1); /* Changed to crystal pink */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Skills Section Styles */
+.skills {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px rgba(255, 97, 0, 0.7);
+
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-box {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 97, 0, 0.7); /* Changed to crystal orange */
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 97, 0, 1); /* Changed to crystal orange */
+}
+
+/* Projects Section Styles */
+.projects {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+}
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-box {
+    background: #1e1e1e;
+    border-radius: 15px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7); /* Changed to crystal pink */
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.project-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-box h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.project-box p {
+    font-size: 1em;
+    color: #ccc;
+    padding: 0 10px 10px 10px;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 1); /* Changed to crystal pink */
+}
+
+/* Resume styles*/
+.resume {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.resume h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+}
+
+.resume p {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    background: #00bcd4; /* Crystal blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.resume-button:hover {
+    background: #0097a7; /* Slightly darker blue */
+}
+
+/* Contact Section Styles */
+.contact {
+    background: #121212;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #00bcd4; /* Crystal blue */
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-field {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.contact-field label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.contact-field input,
+.contact-field textarea {
+    width: calc(100% - 22px); /* Adjust width to account for padding */
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White edge lighting */
+    transition: box-shadow 0.3s, border-color 0.3s;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+    border-color: #00bcd4; /* Crystal blue */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); /* Enhanced white edge lighting on focus */
+}
+
+.contact-field textarea {
+    resize: vertical;
+}
+
+button {
+    background: #00bcd4; /* Crystal blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0097a7; /* Slightly darker blue */
+}
+
+  /* Footer Styles */
+footer {
+    background: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+    position: relative;
+
+footer .social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(242, 227, 8, 0.938); /* Use yellow shade color */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.social-icon.instagram {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/024/170/870/original/instagram-icon-logo-symbol-free-png.png');
+}
+
+.social-icon.twitter {
+    background-image: url('https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg');
+}
+
+.social-icon.facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png');
+}
+
+.social-icon.linkedin {
+    background-image: url('https://th.bing.com/th/id/OIP.b5oDvUVU5UVN4cefTJGq3wHaHa?rs=1&pid=ImgDetMain');
+}
+
+.social-icon.github {
+    background-image: url('https://ugc.production.linktr.ee/d4922f85-8e26-4347-bb09-0bc04793f654_github-logo-git-hub-icon-with-text-on-white-and-black-background-free-vector.jpeg?io=true&size=thumbnail-stack-v1_0');
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(242, 227, 8, 1); /* Use yellow shade color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
+    }
+}
+}
