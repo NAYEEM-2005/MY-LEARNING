@@ -1,0 +1,307 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*head section*/
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #00ffb3;
+    text-shadow: 
+        0 0 5px rgba(0, 255, 179, 0.7), 
+        0 0 10px rgba(0, 255, 179, 0.5);
+}
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #ff0800;
+    text-shadow: 0 0 10px #ff0400;
+}
+
+/* into*/
+.introduction {
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto; 
+    max-width: 600px; 
+}
+
+.introduction h2 {
+    margin-bottom: 15px;
+    color: #00d0ff;
+    font-size: 2.0em;
+}
+/*player profile*/
+.player-grid {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; 
+}
+
+.player-grid h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #ff9e00, 0 0 10px #ff9e00; 
+}
+
+.player-grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.player-card {
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(234, 205, 163, 0.955);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.player-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 30px rgba(234, 205, 163, 1); 
+}
+
+.player-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.player-card h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 10px 0;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff; 
+}
+
+.player-card p {
+    font-size: 1em;
+    color: #ccc;
+    padding: 0 10px 10px 10px;
+}
+
+/* map section*/
+#map {
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+#map-container {
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#map h2 {
+    text-align: center; 
+    text-shadow: 0 0 5px #ff006a, 0 0 10px #ff006a; 
+}
+
+/* matches*/
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+}
+
+.video-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(247, 117, 3, 0.966);
+    transition: transform 0.3s;
+    text-align: center; 
+}
+
+.video-card:hover {
+    transform: scale(1.05); 
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px; 
+}
+
+/* fan zone */
+#fan-zone {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#fan-zone h2 {
+    font-size: 2.5em;
+    color: #ea00ff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(254, 107, 2, 0.5);
+}
+
+#fan-zone label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#fan-zone select {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #ffffff;
+}
+
+#fan-zone button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #00d0ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#fan-zone button:hover {
+    background-color: #00b3cc;
+    transform: scale(1.05);
+}
+
+#fan-zone #result {
+    margin-top: 20px;
+    color: #00ff00;
+}
+
+/*contact section*/
+
+.contact {
+    background: #121212;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #00bcd4; 
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-field {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.contact-field label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.contact-field input,
+.contact-field textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+    transition: box-shadow 0.3s, border-color 0.3s;
+    box-sizing: border-box; 
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+    border-color: #00bcd4; 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+.contact-field textarea {
+    resize: vertical;
+}
+
+button {
+    background: #00bcd4; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0097a7; 
+}
+/*footer*/
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

@@ -1,0 +1,441 @@
+/* General Body Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+/* Header Styles */
+#header {
+    background: linear-gradient(90deg, rgba(0, 191, 255, 0.8), rgba(255, 105, 180, 0.8));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+#header td {
+    padding: 15px;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+#header a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #ff69b4;
+}
+
+/* Home Section */
+#home {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: inset 0 0 30px rgba(255, 105, 180, 0.2);
+}
+
+/* About Section */
+#about {
+    background-color: #181818;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid rgba(0, 191, 255, 0.8);
+}
+
+#about img {
+    border: 5px solid rgba(255, 165, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 1);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#projects {
+    background-color: #1e1e1e; /* Darker background for contrast */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+#projects h2 {
+    color: #ff69b4; /* Crystal pink color */
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4; /* Glowing effect */
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four items per row */
+    gap: 20px; /* Space between items */
+}
+
+.project-item {
+    background-color: rgba(0, 191, 255, 0.7); /* Crystal blue */
+    border-radius: 10px;
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.project-item img {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height for equal sizing */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 15px rgba(0, 191, 255, 1); /* Brighter glow on hover */
+}
+
+.project-item:hover img {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+.project-item p {
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for text background */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.project-item:hover p {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+}
+#skills h2 {
+    color: rgba(0, 191, 255, 0.8);
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff; /* Glowing effect */
+    margin-bottom: 30px;
+}
+
+.honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.honeycomb-cell {
+    width: 100px;
+    height: 60px;
+    background-color: rgba(0, 191, 255, 0.5); /* Crystal blue */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.honeycomb-cell:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+}
+
+/* Honeycomb shape effect */
+.honeycomb-cell:nth-child(odd) {
+    background-color: rgba(255, 105, 180, 0.5); /* Crystal pink */
+}
+
+.honeycomb-cell:nth-child(3n) {
+    background-color: rgba(0, 255, 127, 0.5); /* Crystal green */
+}
+
+.honeycomb-cell:nth-child(4n) {
+    background-color: rgba(148, 0, 211, 0.5); /* Crystal violet */
+}
+
+.honeycomb-cell:nth-child(5n) {
+    background-color: rgba(255, 165, 0, 0.5); /* Crystal orange */
+}
+
+.honeycomb-cell:nth-child(6n) {
+    background-color: rgba(255, 215, 0, 0.5); /* Crystal gold */
+}
+
+.honeycomb-cell:nth-child(7n) {
+    background-color: rgba(128, 0, 128, 0.5); /* Crystal purple */
+}
+
+/* Achievements Section Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #252525; /* Dark background for contrast */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(255, 20, 147, 0.3); /* Crystal Pink */
+}
+
+h2 {
+    color: #00bfff; /* Crystal blue color */
+    text-align: center;
+    text-shadow: 0 0 15px #00bfff, 0 0 30px #ff69b4; /* Glowing effect */
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+ul li {
+    background-color: #090707; /* Slightly lighter background for list items */
+    color: white; /* Text color */
+    padding: 15px;
+    margin: 10px 0; /* Space between list items */
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+ul li:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 10px #ff69b4; /* Glowing effect on hover */
+}
+    
+
+/* Achievements Section Styles */
+#achievements {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(255, 20, 147, 0.3);
+}
+
+#achievements h2 {
+    color: #00bfff;
+    text-align: center;
+    text-shadow: 0 0 15px #00bfff, 0 0 30px #ff69b4;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #090707;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff69b4;
+}
+
+/* Resume styles*/
+.resume {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.resume h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+}
+
+.resume p {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    background: #00bcd4; /* Crystal blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.resume-button:hover {
+    background: #0097a7; /* Slightly darker blue */
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #181818;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: rgba(0, 191, 255, 0.9);
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 350px;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0, 191, 255, 0.9);
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    transition: border-color 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+}
+
+#contact button {
+    padding: 12px 25px;
+    background-color: rgba(0, 191, 255, 0.9);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#contact button:hover {
+    background-color: rgba(255, 105, 180, 0.9);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 1);
+}
+
+ /* Footer Styles */
+ footer {
+    background: #0f0c0c;
+    padding: 10px;
+    text-align: center;
+    color: #ccc;
+    position: relative;
+
+footer .social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(252, 253, 253, 0.976); /* Use yellow shade color */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.social-icon.instagram {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/024/170/870/original/instagram-icon-logo-symbol-free-png.png');
+}
+
+.social-icon.twitter {
+    background-image: url('https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg');
+}
+
+.social-icon.facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png');
+}
+
+.social-icon.linkedin {
+    background-image: url('https://th.bing.com/th/id/OIP.b5oDvUVU5UVN4cefTJGq3wHaHa?rs=1&pid=ImgDetMain');
+}
+
+.social-icon.github {
+    background-image: url('https://ugc.production.linktr.ee/d4922f85-8e26-4347-bb09-0bc04793f654_github-logo-git-hub-icon-with-text-on-white-and-black-background-free-vector.jpeg?io=true&size=thumbnail-stack-v1_0');
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgb(252, 253, 253,1); /* Use yellow shade color */
+}
+ }
+
+@media (max-width: 480px) {
+    #home h2 {
+        font-size: 1.5em; /* Smaller font for mobile */
+    }
+
+    #header {
+        padding: 10px; /* Reduce padding */
+    }
+
+    #contact form {
+        width: 100%; /* Full width for mobile form */
+    }
+
+    #about img {
+        width: 150px; /* Reduce image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #projects h2,
+    #skills h2,
+    #achievements h2 {
+        font-size: 1.5em; /* Smaller section titles */
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
+    }
+    
+    .about-content {
+        flex-direction: column; /* Stack about content */
+        align-items: center; /* Center content */
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+
+    .honeycomb-cell {
+        flex: 1 1 80px; /* Smaller honeycomb cells */
+    }
+}
