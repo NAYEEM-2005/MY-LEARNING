@@ -1,8 +1,6 @@
-## CODSOFT WEB DEVELOPMENT  ##
+PORTFOLIO:
 
-TASK-2 {PORTFOLIO}
-
-NOTE: This is not my original Portfolio. I just created this one  to complete the task in this internship..
+NOTE: This is not my original Portfolio. I just created this one  to learn how to make it.
       So, the skills added in it is false. I'am a beginner in frontend developement.This is also the reason I didn't add my actual photo. It's just a simple portfolio created by me to learn HTML and CSS properly..so that I can further improve myself. 
 
 ## Overview
