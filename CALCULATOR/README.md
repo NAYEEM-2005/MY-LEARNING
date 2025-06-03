@@ -1,6 +1,4 @@
-## CODSOFT WEB DEVELOPMENT ##
-
-{TASK-3}-Dark Themed Calculator.
+Dark Themed Calculator.
 
 This task is a dark-themed calculator built using HTML, CSS, and JavaScript. It includes basic arithmetic operations as well as additional functionalities like squaring and square rooting numbers.
 
